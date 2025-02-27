@@ -1,15 +1,15 @@
 # Imaging cloud coverage with low-cost ground-based photography
 ## Table of Contents
 - Introduction
-- How to use the system
+- How to use
+- Disclaimers
+- Software
+  - Cloud Detection
+  - Cloud Movement
 - Hardware
   - Housing
   - Camera and Lens
   - Weather Station
-- Software
-  - UI (User Interface)
-  - Cloud Detection
-  - Cloud Movement
 - Examples
 - Credits
   
@@ -19,13 +19,7 @@ This is documentation for a sky ground-based imaging system that calculates clou
 This is a final capstone project for the class of 2025 Photographic Sciences at the Rochester Institute of Technology.
 ## How to use
 
-# Hardware
-
-### Camera and Lens
-
-### Housing
-
-### Weather Station
+## Disclaimers
 
 # Software
 
@@ -34,6 +28,14 @@ This is a final capstone project for the class of 2025 Photographic Sciences at 
 ### Cloud Detection
 
 ### Cloud movement 
+
+# Hardware
+
+### Camera and Lens
+
+### Housing
+
+### Weather Station
 
 # Examples
 
