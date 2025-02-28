@@ -1,16 +1,16 @@
 # Imaging cloud coverage with low-cost ground-based photography
 ## Table of Contents
 - Introduction
-  - Disclaimers
-  - How to use
+  - [Disclaimers](#disclaimers)
+  - [How to use](#how-to-use)
 - Software
-  - Cloud Detection
-  - Cloud Movement
+  - [Cloud Detection](#cloud-detection)
+  - [Cloud Movement](#cloud-detection)
 - Hardware
-  - Housing
-  - Camera and Lens
-  - Weather Station
-- Examples
+  - [Housing](#housing)
+  - [Camera and Lens](#camera-and-lens)
+  - [Weather Station](#weather-station)
+- [Examples](#examples)
 - Credits
   
 # Introduction
