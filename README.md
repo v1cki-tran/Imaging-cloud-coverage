@@ -1,8 +1,8 @@
 # Imaging cloud coverage with low-cost ground-based photography
 ## Table of Contents
 - Introduction
-- How to use
 - Disclaimers
+- How to use
 - Software
   - Cloud Detection
   - Cloud Movement
@@ -17,9 +17,9 @@
 This is documentation for a sky ground-based imaging system that calculates cloud coverage along with . This system can operate in remote location  
 
 This is a final capstone project for the class of 2025 Photographic Sciences at the Rochester Institute of Technology.
-## How to use
-
 ## Disclaimers
+
+## How to use
 
 # Software
 
