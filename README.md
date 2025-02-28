@@ -23,8 +23,6 @@ This is a final capstone project for the class of 2025 Photographic Sciences at 
 
 # Software
 
-### UI
-
 ### Cloud Detection
 
 ### Cloud movement 
