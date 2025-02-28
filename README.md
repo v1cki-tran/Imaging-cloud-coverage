@@ -1,8 +1,8 @@
 # Imaging cloud coverage with low-cost ground-based photography
 ## Table of Contents
 - Introduction
-- Disclaimers
-- How to use
+  - Disclaimers
+  - How to use
 - Software
   - Cloud Detection
   - Cloud Movement
