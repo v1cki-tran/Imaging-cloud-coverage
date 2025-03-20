@@ -306,14 +306,15 @@ def plots(csv, directory):
 	for num in size:
 		plot_dict[headings[num]]=plot_bools[num] # Assemble dictionary from our booleans and their cooresponding headings
 	for cols in headings:	
-		csvfile.plot(0,cols)
-		Axes.setylabel(cols) # make the plot, this needs the most work as the x axis always looks fucked up from the timestamps
+		if plot_dict{[cols]}:
+			csvfile.plot(0,cols)
+			Axes.setylabel(cols) # make the plot, this needs the most work as the x axis always looks fucked up from the timestamps
 		
-		fig=plt.gcf() # Save out the plots
-		fig.canvas.draw()
-		fig_array=np.array(fig.canvas.renderer._renderer)
-		fig_bgr = cv2.cvtColor(fig_array, cv2.COLOR_RGB2BGR)
-		cv2.imwrite(os.path.join(directory, datetime.now().strftime('%Y-%m-%d') + '_image_cloud_data.csv'+'.png'),fig_bgr) 
+			fig=plt.gcf() # Save out the plots
+			fig.canvas.draw()
+			fig_array=np.array(fig.canvas.renderer._renderer)
+			fig_bgr = cv2.cvtColor(fig_array, cv2.COLOR_RGB2BGR)
+			cv2.imwrite(os.path.join(directory, datetime.now().strftime('%Y-%m-%d') + '_image_cloud_data.csv'+'.png'),fig_bgr) 
 			
 
 def Run():
