@@ -51,7 +51,7 @@ window.bind('<Escape>', lambda event: window.quit())
 ###################################################
 #Key variables
 camera = Picamera2()
-config = camera.create_preview_configuration(main={"size": (960,540)})
+config = camera.create_preview_configuration(main={"size": (720,540)})
 camera.configure(config)
 camera.start()
 hour=8 # Duration
