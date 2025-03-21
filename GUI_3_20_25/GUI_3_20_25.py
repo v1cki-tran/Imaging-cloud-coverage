@@ -306,7 +306,7 @@ def plots(csv, directory):
 	for num in size:
 		plot_dict[headings[num]]=plot_bools[num] # Assemble dictionary from our booleans and their cooresponding headings
 	for cols in headings:	
-		if plot_dict{[cols]}:
+		if plot_dict[[cols]]:
 			csvfile.plot(0,cols)
 			Axes.setylabel(cols) # make the plot, this needs the most work as the x axis always looks fucked up from the timestamps
 		
