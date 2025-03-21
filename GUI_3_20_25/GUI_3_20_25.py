@@ -292,11 +292,11 @@ def csvs(directory):
 	return csv_writer_sensor
 
 def plots(csv, directory):
-	global temp, humidiy, pressure1, pressure2, dewpoint, dewpointdep, cloudc
+	global temp, humidity, pressure1, pressure2, dewpoint, dewpointdep, cloudc
 	csvfile = pd.read_csv(csv) # Calls our global booleans and reads the csv
 	
 	plot_bools = [0] # start with a False or 0 in the list so the program doesn't plot timestamp v timestamp
-	plot_bools.extend([temp.get(), humidiy.get(), pressure1.get(), 
+	plot_bools.extend([temp.get(), humidity.get(), pressure1.get(), 
 	pressure2.get(), dewpoint.get(), dewpointdep.get(), cloudc.get()])
 	tuple(plot_bools)
 	
@@ -367,7 +367,7 @@ def Run():
 			break
 	# Create time lapse
 	run_time_lapse(cwd+'/'+folder_name, datetime.now().strftime("%Y-%m-%d_%H-%M-%S")+'.mp4', fps)
-	plots(os.path.join(directory, datetime.now().strftime('%Y-%m-%d') + '_image_cloud_data.csv'), cwd)
+	plots(os.path.join(cwd, datetime.now().strftime('%Y-%m-%d') + '_image_cloud_data.csv'), cwd)
 	run_button.configure(text="Run", command=threading)
 	stop_event.clear()
     
