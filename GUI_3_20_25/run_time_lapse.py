@@ -29,7 +29,7 @@ def run_time_lapse(folder_path, output_path, frame_rate):
     for image_name in images:
         image_path = os.path.join(folder_path, image_name)
         frame = cv2.imread(image_path)
-        frame = cv2.resize(frame, (1280, 720), interpolation=cv2.INTER_AREA)
+        frame = cv2.resize(frame, (1280, 960), interpolation=cv2.INTER_AREA)
 
         if frame is None:
             print(f"Failed to load image {image_name}. Skipping it.")
