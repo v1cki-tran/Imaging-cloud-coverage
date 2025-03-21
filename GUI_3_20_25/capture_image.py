@@ -14,7 +14,7 @@ def capture_image(camera, masked, mask, directory):
         os.makedirs(folder_path)
         
     camera.stop()
-    config = camera.create_still_configuration(main={"size": (4608, 2592)})
+    config = camera.create_still_configuration(main={"size": (4608, 3040)})
     camera.configure(config)
     camera.start()
     # Construct the file path with the 'images' folder
@@ -26,7 +26,7 @@ def capture_image(camera, masked, mask, directory):
         return folder_name, file_name
     elif masked == True:
         camera_frame = camera.capture_array()
-        mask = cv2.resize(mask, (4608, 2592), interpolation = cv2.INTER_AREA)
+        mask = cv2.resize(mask, (4608, 3040), interpolation = cv2.INTER_AREA)
         mimg = cv2.bitwise_and(camera_frame, camera_frame, mask=mask)
         img = cv2.cvtColor(mimg, cv2.COLOR_BGR2RGB)
         img.astype(np.uint8)
