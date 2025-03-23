@@ -353,10 +353,10 @@ def Run():
 			# Read serial data and capture image
 			read_serial_data(ser, pin, csv_writer_sensor)
 			folder_name, file_name = capture_image(camera, masked, mask, cwd)
-			#input_image2, mean_cover, image_filename = cloud_detection(file_name)
-			#cloud_motion(input_image1, input_image2, mean_cover, image_filename, now, csv_writer_image_cloud)
+			input_image2, mean_cover, image_filename = cloud_detection(file_name)
+			cloud_motion(input_image1, input_image2, mean_cover, image_filename, now, csv_writer_image_cloud)
             
-			#input_image1 = input_image2
+			input_image1 = input_image2
 
 			# Set next interval
 			interval = now + timedelta(seconds=intervalInSeconds)
