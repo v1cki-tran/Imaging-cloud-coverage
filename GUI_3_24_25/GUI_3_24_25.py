@@ -405,10 +405,6 @@ def Run():
 			progress_bar.step(incriment)
 			print(f"{percent}% completed")
 			window.update_idletasks()
-			d_t = datetime.now() - now
-			if d_t.total_seconds() != 0.0:
-				fps = 1.0 / d_t.total_seconds()
-				print("FPS:", fps)
 		elif now >= stop_time:
 			print("shoot finsished")
 			stop_running()
