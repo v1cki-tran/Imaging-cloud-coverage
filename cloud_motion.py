@@ -1,8 +1,11 @@
 import cv2
 import numpy as np
 
-def cloud_motion(seg_frame1, seg_frame2, percent_cover, image_filename, now, csv_writer_image_cloud):
+def cloud_motion(seg_frame1, seg_frame2, percent_cover, image_filename, now, csv_writer_image_cloud, motion_mask):
 
+    seg_frame1 = cv2.bitwise_and(seg_frame1, seg_frame1, mask=motion_mask)
+    seg_frame2 = cv2.bitwise_and(seg_frame2, seg_frame2, mask=motion_mask)
+    
     # Ensure binary masks (clouds = 255, background = 0)
     _, seg_frame1 = cv2.threshold(seg_frame1, 127, 255, cv2.THRESH_BINARY)
     _, seg_frame2 = cv2.threshold(seg_frame2, 127, 255, cv2.THRESH_BINARY)
@@ -16,14 +19,22 @@ def cloud_motion(seg_frame1, seg_frame2, percent_cover, image_filename, now, csv
     avg_angle = np.mean(angle[cloud_mask])
 
     # Determine the cardinal direction (currently abaritrary numbers) 
-    if 45 <= avg_angle < 135:
+    if 247.5 <= avg_angle < 292.5:
         direction = "North"
-    elif 135 <= avg_angle < 225:
-        direction = "West"
-    elif 225 <= avg_angle < 315:
-        direction = "South"
-    else:
+    elif 292.51 <= avg_angle < 337.5:
+        direction = "North-East"
+    elif 337.51 <= avg_angle < 22.5:
         direction = "East"
+    elif 22.51 <= avg_angle < 67.5:
+        direction = "South-East"
+    elif 67.51 <= avg_angle < 112.5:
+        direction = "South"
+    elif 112.51 <= avg_angle < 157.5:
+        direction = "South-West"
+    elif 157.51 <= avg_angle < 202.5:
+        direction = "West"
+    else:
+        direction = "North-West"
 
     _, image_name = image_filename.split("/")
     csv_writer_image_cloud.writerow([now.strftime('%Y-%m-%d %H:%M:%S'), image_name, percent_cover, avg_magnitude, direction])
