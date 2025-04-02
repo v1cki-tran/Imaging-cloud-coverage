@@ -44,6 +44,11 @@ def cloud_detection(file_name):
     center = (width // 2, height // 2)
     radius = 1500
     cv2.circle(black_mask, center, radius, 255, -1)
+
+    motion_mask = np.zeros((height, width), dtype=np.uint8)
+    center = (width // 2, height // 2)
+    radius = 1000
+    cv2.circle(motion_mask, center, radius, 255, -1)
     
     #calculate total pixels + debuging print statments
     total_pixels = total_pixels - (np.sum(black_mask)/255)
