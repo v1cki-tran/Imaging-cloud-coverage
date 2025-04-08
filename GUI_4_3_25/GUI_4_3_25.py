@@ -428,6 +428,22 @@ def plot_direction(csv, directory):
 	fig_bgr = cv2.cvtColor(fig_array, cv2.COLOR_RGB2BGR)
 	cv2.imwrite(os.path.join(directory, datetime.now().strftime('%Y-%m-%d') + '_image_cloud_data'+ 'Direction'+'.png'),fig_bgr)
 
+def system_running():
+	print('The System's running!')
+ 
+def run_configuration():
+	more_duration.configure(command=system_running)
+ 	less_duration.configure(command=system_running)
+  	run_button.configure(command=system_running)
+   	camera_button.configure(command=system_running)
+    	crop_button.configure(command=system_running)
+     	more_interval.configure(command=system_running)
+      	less_interval.configure(command=system_running)
+        file_button.configure(command=system_running)
+	more_fps.configure(command=system_running)
+ 	less_fps.configure(command=system_running)
+  	
+
 def Run():
 	global interval, intervalInSeconds, camera, masked, mask_path, cwd, fps
 	framesps = fps
