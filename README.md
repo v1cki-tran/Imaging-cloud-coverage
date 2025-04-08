@@ -109,6 +109,8 @@ In order to save costs our housing was designed and created using CAD software a
 There also handles, a lens cover, an optional optical window, and a sun shield for the screen. 
 
  PASTE IMAGES OF HOUSING
+![Capstone Images_1](https://github.com/user-attachments/assets/f9ef8104-6e44-4b39-ba2f-47c65724b655)
+
 
 An AutoCAD .dwg file is provided of the CAD design in the github. 
 
