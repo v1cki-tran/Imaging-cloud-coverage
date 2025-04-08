@@ -62,7 +62,7 @@ The methods output a binary mask of the clouds where white is a cloud and black 
 
  <img width="650" alt="image" src="https://github.com/user-attachments/assets/b716db4a-aeba-48e6-ada7-cb52683d51bc" />
  
-The binary images are then combined into a final segmentation. If the pixel in a spot is a cloud in more than __ of the segmentation methods, it is selected as a cloud in the final image. This requirement for more than __ images to agree prevents false positives. 
+The binary images are then combined into a final segmentation. If the pixel is a cloud pixel in 4 of the segmentation methods, it is selected as a cloud in the final image. This requirement for 4 of the 5 images to agree prevents false positives. That number of agreeing methods can be changed in the code. 
 Another way that our code provides more accurate data is by weighting the segmentation for the cloud coverage percentage. The cloud segmentation is weighted from the center of the image to the outsides. The reason being is because of perspective. The clouds will bunch up in the outer view of the image meaning there may appear to be a high density but may be lower. For that reason the clouds on the edge count less towards the percentage.
 An example of the combined images and the weighted image used for percentage is displayed below.
 
