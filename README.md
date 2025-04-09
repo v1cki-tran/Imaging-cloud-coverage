@@ -79,7 +79,8 @@ Our goal was to create a low cost system that anyone could make themselves. Our 
 The selection of our components was chosen with not only cost but ease of use and amount of resouirces on the products. 
 A [full list of links](#hardware-links) can be found at the end of this section.
 
-![image](https://github.com/user-attachments/assets/deba10c8-1fdf-4c2b-bec1-01720a7bec9a)
+![image](https://github.com/user-attachments/assets/46cc2b84-4ffa-40f8-ba6f-fffd5ed3a060)
+
 ### Camera and Lens
 The camera and lens selection had the following criteria:
 -	The camera needed to be able to connect to our processor
