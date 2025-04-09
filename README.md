@@ -36,7 +36,8 @@ The outputs will then be saved to the selected folder as the system runs and whe
 # Software
 The system runs from a Gui.
 When running from the GUI the flow of the software runs in the flow that is shown below.
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/66e2dfb3-b42b-46c1-80c0-d48bc6dc89a1" />
+ADD FLOW CHART
+
 
 The GUI pulls from multiple python files which each run part of the system. The included files are:
 -	GUI_4_3_25.py
