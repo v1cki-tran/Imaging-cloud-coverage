@@ -32,7 +32,7 @@ The system can NOT operate in the following conditions:
 
 ## How to use
 The system is simple to use and quick to set up. Our system features a touch screen on the outside of the box where the whole system can be controlled using a GUI. 
-The GUI will automatically start when the system is powered on. The user will then perform the following steps:
+The user interface can be started by double clicking the 'Eyez on the skiez' file on the desktop and telling it to exucute in the pop-up menu. The user will then perform the following steps:
 -	Set up the system facing north
 -	Open the image preview and determine if image is good
 -	Select settings for system to run by selecting:
