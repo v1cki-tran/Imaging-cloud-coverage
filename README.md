@@ -84,7 +84,11 @@ All of this is encompassed in the cloud_detection.py file.
 
 
 ### Cloud Movement 
-The movement of the clouds is done in a simple but effective way. The motion of the clouds is compared between two consecutive images using optical flow. The optical flow of the images is then averaged. That direction of movement along with the fact that the system is set up to face north by the user allows us to give a general direction.
+The movement of the clouds is done in a simple but effective way. The motion of the clouds is compared between two consecutive images using optical flow. The optical flow of the images is then averaged. That direction of movement along with the fact that the system is set up to face north by the user allows us to give a general direction. The method is simple but works for our use.
+
+Below is an visual representation of what we are doing:
+
+<img src="https://github.com/user-attachments/assets/22691841-8136-4aea-8bf0-245a8269ea83" width="650"/>
 
 # Hardware
 Our goal was to create a low cost system that anyone could make themselves. Our system requires only $___ in parts to build.
