@@ -1,7 +1,7 @@
 # Imaging cloud coverage with low-cost ground-based photography
 ## Table of Contents
 - Introduction
-  - [Disclaimers](#disclaimers)
+  - [Operating Conditions](#operating-conditions)
   - [How to use](#how-to-use)
 - [Software](#software)
   - [Cloud Detection](#cloud-detection-algorithm)
@@ -15,9 +15,20 @@
 - Credits
   
 # Introduction
-This project focuses on designing and developing a cloud imaging system that captures whole-sky photographs, computes cloud coverage, monitors cloud movement, and outputs both graphical and time-lapse data. This is a final capstone project for the class of 2025 Photographic Sciences at the Rochester Institute of Technology. Landsat 9 launched by NASA in 2021 in order to gather data about the Earths surface. Since 1999, the Rochester Institute of Technology (RIT) has provided thermal infrared (TIR) reference data for calibrating Landsat thermal sensors and plays a key role in validating their corresponding products.​ This project will be used along with ground-based instrumentation to measure surface temperature and cloud coverage. This system will provide critical information for validating Landsat’s thermal imaging products.
+This project focuses on designing and developing a cloud imaging system that captures whole-sky photographs, computes cloud coverage, monitors cloud movement, and outputs both graphical and time-lapse data. This is a final capstone project for the class of 2025 Photographic Sciences at the Rochester Institute of Technology. This project was purpose built for DIRS Group at RIT. Since 1999, the Rochester Institute of Technology (RIT) has provided thermal infrared (TIR) reference data for calibrating Landsat thermal sensors and plays a key role in validating their corresponding products.​ Landsat 9 launched by NASA in 2021 in order to gather data about the Earths surface. Landsat reads groud temperature using IR imaging. Clouds block the readings and affect the data. This project will be used along with ground-based instrumentation to measure surface temperature and cloud coverage. This will provide critical cloud coverage information for validating ground temperature readings and Landsat’s thermal imaging products.
 
-## Disclaimers
+## Operating Conditions
+The user is required to have a USB flash drive of at least 128 GB for the system to store the data. 
+
+The ideal environment for the system is a flat, open area with full access to the sky, with little to no buildings and trees. 
+
+The system can NOT operate in the following conditions:
+- Nighttime 
+- Heavy rain
+- Snow
+- Temperatures under 32° F 
+- Temperatures over 95° F
+
 
 ## How to use
 The system is simple to use and quick to set up. Our system features a touch screen on the outside of the box where the whole system can be controlled using a GUI. 
@@ -36,8 +47,8 @@ The outputs will then be saved to the selected folder as the system runs and whe
 # Software
 The system runs from a Gui.
 When running from the GUI the flow of the software runs in the flow that is shown below.
-ADD FLOW CHART
 
+<img width="600" alt="Flowchart" src="https://github.com/user-attachments/assets/c4ab52ce-1054-4e98-968a-c61c15ead67e" />
 
 The GUI pulls from multiple python files which each run part of the system. The included files are:
 -	GUI_4_3_25.py
@@ -80,7 +91,7 @@ Our goal was to create a low cost system that anyone could make themselves. Our 
 The selection of our components was chosen with not only cost but ease of use and amount of resouirces on the products. 
 A [full list of links](#hardware-links) can be found at the end of this section.
 
-![image](https://github.com/user-attachments/assets/46cc2b84-4ffa-40f8-ba6f-fffd5ed3a060)
+<img src="https://github.com/user-attachments/assets/46cc2b84-4ffa-40f8-ba6f-fffd5ed3a060" width="650"/>
 
 ### Camera and Lens
 The camera and lens selection had the following criteria:
@@ -110,9 +121,8 @@ The lens was selected has an image circle around 5mm which only just is larger t
 In order to save costs our housing was designed and created using CAD software and 3D printed. The housing has two main parts: the body and the lid. 
 There also handles, a lens cover, an optional optical window, and a sun shield for the screen. 
 
- PASTE IMAGES OF HOUSING
-![Capstone Images_1](https://github.com/user-attachments/assets/f9ef8104-6e44-4b39-ba2f-47c65724b655)
 
+<img src="https://github.com/user-attachments/assets/f9ef8104-6e44-4b39-ba2f-47c65724b655" width="600"/>
 
 An AutoCAD .dwg file is provided of the CAD design in the github. 
 
