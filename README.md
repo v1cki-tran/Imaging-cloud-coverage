@@ -139,12 +139,25 @@ The weather station uses the following components:
 The Arduino Nano seamlessly connects to the Raspberry Pi and as the Pi calls is the Nano sends the weather information from the sensors to the Pi. The housing has ports in the rear where the sensors are exposed to the outside air for more accurate data. 
 
 ### Hardware links
-Camera Link: https://www.raspberrypi.com/products/raspberry-pi-high-quality-camera/ 
-https://www.digikey.com/en/products/detail/raspberry-pi/SC0870/17278640 
-Lens Link: https://edatec.cn/storage/file/ED-LENS-M12-230155-12%20Datasheet.pdf 
-https://www.digikey.com/en/products/detail/edatec/ED-LENS-M12-230155-12/20195789 
+Camera Links: 
+- https://www.raspberrypi.com/products/raspberry-pi-high-quality-camera/ 
+- https://www.digikey.com/en/products/detail/raspberry-pi/SC0870/17278640 
+
+Lens Links: 
+- https://edatec.cn/storage/file/ED-LENS-M12-230155-12%20Datasheet.pdf 
+- https://www.digikey.com/en/products/detail/edatec/ED-LENS-M12-230155-12/20195789
 
 # Examples
+
+
+
+
+Data Plot Example: 
+<img src="https://github.com/user-attachments/assets/ab5b1e97-515d-43b6-ad8a-bccf1b44ab01" width="600"/>
+
+
+
+
 
 # Credits
 
