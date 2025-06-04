@@ -149,15 +149,5 @@ Lens Links:
 
 # Examples
 
-
-
-
-Data Plot Example: 
 <img src="https://github.com/user-attachments/assets/ab5b1e97-515d-43b6-ad8a-bccf1b44ab01" width="600"/>
-
-
-
-
-
-# Credits
 
